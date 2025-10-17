@@ -1,0 +1,8 @@
+[build]
+# Pure static site — no build step needed
+publish = "."
+
+[[headers]]
+for = "/*"
+  [headers.values]
+  Cache-Control = "public, max-age=3600"
